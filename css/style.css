@@ -61,6 +61,14 @@ a:active {
   margin-top: 50px;
 }
 
-.bg-yellow {
-  background: #fff9dc;
+.bg-lightblue {
+  background: #ADD8E6;
+}
+
+.name {
+  color: #708090;
+}
+
+.books {
+  color: #708090;
 }

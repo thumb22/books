@@ -14,15 +14,9 @@ body {
 }
 
 .footer {
-  display: flex;
   padding: 5px;
   background-color: #284544;
   color: #fff;
-  font-size: 15px;
-}
-
-.footer-text-second {
-  text-align: right;
 }
 
 .container {
@@ -77,6 +71,8 @@ a:active {
 .books-img {
   width: 250px;
   box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  height: auto;
 }
 
 .conclusions {
@@ -102,20 +98,35 @@ a:active {
   color: #708090;
 }
 
-.youtube {
-  margin-left: 5px;
-}
-
 .footer-links {
   position: absolute;
   right: 25px;
-  top: 25px;
+  color: #F5F5F7;
 }
 
 .footer-rights {
-
+  font-size: 15px;
+  color: #F5F5F7;
 }
 
 .footer-info {
-  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+}
+
+.image-link:hover {
+  opacity: 0.9;
+}
+
+.image-link {
+  transition: opacity 0.3s ease;
+}
+
+img.books-img.image-link {
+  height: 330px;
+}
+
+.footer-logo {
+  margin-left: 15px;
 }

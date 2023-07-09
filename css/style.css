@@ -20,9 +20,7 @@ body {
 }
 
 .container {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
+
 }
 
 .main {
@@ -38,7 +36,6 @@ a {
 a:hover {
   color: darkcyan;
 }
-
 a:active {
   color: #708090;
 }
@@ -54,6 +51,9 @@ a:active {
   max-width: 750px;
   margin: auto;
   padding-top: 30px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .top {
@@ -105,28 +105,42 @@ a:active {
 }
 
 .footer-rights {
-  font-size: 15px;
+  font-size: 18px;
   color: #F5F5F7;
 }
 
 .footer-info {
-  padding-top: 20px;
+  padding-top: 15px;
   padding-bottom: 20px;
   display: flex;
 }
 
-.image-link:hover {
-  opacity: 0.9;
-}
-
 .image-link {
-  transition: opacity 0.3s ease;
+  position: relative;
 }
 
-img.books-img.image-link {
-  height: 330px;
+.image-link img {
+  vertical-align: top;
+}
+
+.image-link:after {
+  content:'\A';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.6);
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.image-link:hover:after {
+  opacity: 30%;
 }
 
 .footer-logo {
   margin-left: 15px;
 }
+
